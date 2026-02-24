@@ -15,48 +15,26 @@
         <div class="grid grid-cols-2 gap-4">
           <label class="block">
             <div class="mb-1 text-sm font-medium">USD → GBP</div>
-            <input
-              id="rate"
-              type="number"
-              step="0.0001"
-              value="0.73"
-              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2"
-            />
+            <input id="rate" type="number" step="0.0001" value="0.73"
+              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2" />
           </label>
 
           <label class="block">
             <div class="mb-1 text-sm font-medium">Cost price ($)</div>
-            <input
-              id="usdCost"
-              type="number"
-              step="0.01"
-              value="1"
-              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2"
-            />
+            <input id="usdCost" type="number" step="0.01" value="1"
+              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2" />
           </label>
 
           <label class="block">
             <div class="mb-1 text-sm font-medium">Multiplier</div>
-            <input
-              id="multiplier"
-              type="number"
-              step="0.01"
-              value="1.2"
-              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2"
-            />
+            <input id="multiplier" type="number" step="0.01" value="1.2"
+              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2" />
           </label>
 
           <label class="block">
             <div class="mb-1 text-sm font-medium">Margin (%)</div>
-            <input
-              id="margin"
-              type="number"
-              step="0.1"
-              min="0"
-              max="99"
-              value="40"
-              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2"
-            />
+            <input id="margin" type="number" step="0.1" min="0" max="99" value="40"
+              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2" />
           </label>
         </div>
 
@@ -77,13 +55,8 @@
 
           <label class="block">
             <div class="mb-1 text-sm font-medium">Gross (£)</div>
-            <input
-              id="grossRaw"
-              type="number"
-              step="0.01"
-              inputmode="decimal"
-              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2"
-            />
+            <input id="grossRaw" type="number" step="0.01" inputmode="decimal"
+              class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 outline-none ring-blue-500 focus:ring-2" />
           </label>
 
           <label class="block">
@@ -97,30 +70,10 @@
             <input id="finalProfit" readonly
               class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 outline-none" />
           </label>
-        </div>
 
-        <!-- Buttons -->
-        <div class="mt-4 flex flex-col gap-2 sm:flex-row">
-          <button id="copyBtn"
-            class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-500"
-            type="button">
-            Copy RRP gross
-          </button>
-          
-          <button id="resetBtn"
-            class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800"
-            type="button">
-            Reset defaults
-          </button>
         </div>
 
       </div>
-    </div>
-
-    <div id="toast"
-      class="pointer-events-none fixed bottom-4 right-4 translate-y-2 opacity-0 transition-all duration-200
-             rounded-xl bg-slate-900 px-3 py-2 text-sm text-white shadow-lg">
-      Copied gross price
     </div>
 
     <script src="app.js"></script>
