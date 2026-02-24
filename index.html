@@ -25,7 +25,7 @@
           </label>
 
           <label class="block">
-            <div class="mb-1 text-sm font-medium">Cost price (USD)</div>
+            <div class="mb-1 text-sm font-medium">Cost price ($)</div>
             <input
               id="usdCost"
               type="number"
@@ -36,7 +36,7 @@
           </label>
 
           <label class="block">
-            <div class="mb-1 text-sm font-medium">Multiplier (freight)</div>
+            <div class="mb-1 text-sm font-medium">Multiplier</div>
             <input
               id="multiplier"
               type="number"
@@ -64,19 +64,19 @@
         <div class="mt-6 grid grid-cols-2 gap-4">
 
           <label class="block">
-            <div class="mb-1 text-sm font-medium">Rounded net cost (GBP)</div>
+            <div class="mb-1 text-sm font-medium">Net cost (£)</div>
             <input id="netCostGBP" readonly
               class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 outline-none" />
           </label>
 
           <label class="block">
-            <div class="mb-1 text-sm font-medium">My net price (GBP)</div>
+            <div class="mb-1 text-sm font-medium">Net price (£)</div>
             <input id="sellNet" readonly
               class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 outline-none" />
           </label>
 
           <label class="block">
-            <div class="mb-1 text-sm font-medium">Actual gross price (GBP)</div>
+            <div class="mb-1 text-sm font-medium">Gross (£)</div>
             <input
               id="grossRaw"
               type="number"
@@ -87,13 +87,13 @@
           </label>
 
           <label class="block">
-            <div class="mb-1 text-sm font-medium">RRP (GBP)</div>
+            <div class="mb-1 text-sm font-medium">RRP (£)</div>
             <input id="sellGross" readonly
               class="w-full rounded-xl border border-emerald-300 bg-emerald-50 px-3 py-2 font-semibold text-emerald-700 outline-none" />
           </label>
 
           <label class="block">
-            <div class="mb-1 text-sm font-medium">Actual profit (GBP)</div>
+            <div class="mb-1 text-sm font-medium">Profit (£)</div>
             <input id="finalProfit" readonly
               class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 outline-none" />
           </label>
@@ -101,16 +101,16 @@
 
         <!-- Buttons -->
         <div class="mt-4 flex flex-col gap-2 sm:flex-row">
-          <button id="resetBtn"
-            class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800"
-            type="button">
-            Reset defaults
-          </button>
-
           <button id="copyBtn"
             class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-500"
             type="button">
             Copy RRP gross
+          </button>
+          
+          <button id="resetBtn"
+            class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800"
+            type="button">
+            Reset defaults
           </button>
         </div>
 
